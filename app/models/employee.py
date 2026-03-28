@@ -9,6 +9,7 @@ class Employee(Base):
   name = Column(String, nullable=False)
   email = Column(String, unique=True, index=True)
   phone_number = Column(String)
+  address = Column(String)
   age = Column(Integer)
   salary = Column(Float, nullable=False)
   joining_date = Column(Date)
@@ -17,3 +18,4 @@ class Employee(Base):
   added_by = Column(String)
   created_at = Column(DateTime, default=datetime.utcnow)
   updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+  

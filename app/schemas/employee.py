@@ -5,6 +5,7 @@ class EmployeeCreate(BaseModel):
   name: str
   email: str
   phone_number: str | None = None
+  address: str | None = None
   age: int | None = None
   salary: float
   joining_date: date | None = None
@@ -17,6 +18,7 @@ class EmployeeResponse(BaseModel):
   name: str
   email: str
   phone_number: str | None = None
+  address: str | None = None
   age: int | None = None
   salary: float
   joining_date: date | None = None
