@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from datetime import date, datetime
+from app.schemas.store import StoreResponse
 
 class EmployeeCreate(BaseModel):
   name: str
@@ -37,6 +38,7 @@ class EmployeeResponse(BaseModel):
   left_date: date | None = None
   leave: int | None = None
   added_by: str | None = None
+  store: StoreResponse
   created_at: datetime | None = None
   updated_at: datetime | None = None
 

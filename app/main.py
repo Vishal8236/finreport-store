@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from app.db.base import Base
 from app.db.session import engine
 from app.models.employee import Employee
+from app.models.store import Store
 from app.api.router import api_router
 
 # import models (IMPORTANT)

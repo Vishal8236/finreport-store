@@ -6,6 +6,7 @@ from sqlalchemy import pool
 from alembic import context
 from app.db.base import Base
 from app.models.employee import Employee
+from app.models.store import Store
 import os, sys
 from dotenv import load_dotenv
 
