@@ -22,4 +22,6 @@ venv/
 *.sqlite3
 
 # Alembic
-alembic/versions/
+alembic/versions
+
+structure.txt
